@@ -1,0 +1,330 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+   
+    background-color: antiquewhite;
+    color: aliceblue;
+}
+
+header nav{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    padding: 20px;
+}
+
+header nav h1{
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+header nav form{
+    display: flex;
+    justify-content: center;
+}
+form input[type=text]{
+    flex-grow: 1;
+    margin-right: 10px;
+
+}
+
+form input[type=text],button[type=submit]{
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 4px;
+   
+}
+ form button[type=submit]{
+    background-color: #f44336;
+    color: aliceblue;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+ }
+ form button[type=submit]:hover,.recipe button:hover,.recipe-close-Btn:hover{
+    background-color: #ff5c5c;
+ }
+
+/*----------------------index1 file------------------------*/
+.nav1{
+   display: flex;
+ }
+
+.nav2 a{
+   font-size: 2rem;
+    color: white;
+    margin-left: 1100px;
+ }
+
+.nav2 a:hover{
+   color: #ff5c5c;
+ }
+
+.start-button {
+   display: inline-block;
+   margin-top: 20px;
+   padding: 10px 20px;
+   font-size: 18px;
+   color: white;
+   background-color: #ff4500;
+   border: none;
+   border-radius: 5px;
+   text-decoration: none;
+   transition: background-color 0.3s;
+}
+.start-button:hover {
+   background-color: #ff6347;
+}
+
+.recipe-container1{
+   text-align: center;
+   background: url(home.jpg)no-repeat;
+   background-size: cover;
+   background-position: center;
+   height: 30rem;
+   margin-top: 20px;
+   display:block;
+   grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+   grid-gap: 40px;
+   width: auto;
+   margin: 10px auto;
+   padding: 30px;
+   place-items: center;
+  
+}
+
+.recipe-container1 h2{
+   margin-top: 150px;
+   font-size: 2rem;
+}
+
+
+.recipe1{
+   padding: 50px 0;
+}
+
+.recipe1 h2{
+   text-align: center;
+   margin-bottom: 30px;
+   font-size: 25px;
+   color: black;
+}
+
+.re-sec{
+   width: 90%;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+   column-gap: 10px;
+}
+
+.re-card{
+   background: #fff;
+   margin: 30px 10px;
+   overflow: hidden;
+   border-radius: 8px;
+   border: 1px solid #ccc;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.re-card img{
+   width: 100%;
+   height: 200px;
+   object-fit: cover;
+
+}
+
+.re-card h2{
+   font-size: 20px;
+   padding: 20px;
+   color: black;
+}
+
+.re-card p{
+   font-size: 18px;
+   padding: 20px;
+   color: black;
+}
+
+.re-card a{
+   display: block;
+   text-align: center;
+   text-decoration: none;
+   background: #333;
+   color: #fff;
+   padding: 15px 0;
+   cursor: pointer;
+}
+
+
+/*----------------------index file------------------------*/
+ .recipe-container{
+    text-align: center;
+    background: url(home1.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    margin-top: 20px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-gap: 40px;
+    width: 80rem;
+    margin: 10px auto;
+    border-radius: 5px;
+    padding: 20px;
+    place-items: center;
+   
+ }
+ .recipe-container h2{
+   margin-top: 200px;
+   margin-bottom: 200px;
+   font-size: 2rem;
+   font: sans-serif;
+ }
+
+ .recipe-container span{
+   font-size: 20px;
+ }
+ 
+ .recipe-container form{
+   margin-top: 20px;
+   margin-bottom: 200px;
+ }
+
+ .recipe-container h6{
+   margin-top: 200px;
+   margin-bottom: 200px;
+   font-size: 30px;
+ }
+ 
+ .recipe{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    border-radius: 6px;
+    box-shadow: 0px 5px 10px rgba(78,73,73,0.1),-5px -5px 10px rgba(34, 34, 34, 0.5);
+    cursor: pointer;
+    max-width: 350px;
+    transition: transform 0.3s ease-in-out;
+ }
+ .recipe:hover{
+   transform: scale(1.02);
+ }
+ .recipe img{
+    height: 300px;
+ }
+ .recipe h3{
+    font-size: 24px;
+    margin-block: 5px;
+ }
+ .recipe p{
+    font-size: 20px;
+    
+ }
+ .recipe span{
+    font-weight: 600px;
+ }
+ .recipe button{
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 18px auto;
+    background-color: #f44336;
+    color: aliceblue;
+    border: none;
+ }
+
+ 
+
+ .recipe-details{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform:translate(-50%,-50%) ;
+    background-color: #694c2f;
+    border-radius: 12px;
+    width: 40%;
+    height: 60%;
+    font-size: 20px;
+    overflow-y: scroll;
+    transition: all 0.5s ease-in-out;
+ }
+ .recipe-details::-webkit-scrollbar{
+    width: 10px;
+ }
+ .recipe-details::-webkit-scrollbar-thumb{
+    background: #b5b5ba;
+    border-radius: 16px;
+    --webkit-border-radius: 16px;
+ }
+ .recipe-details-content{
+    padding: 30px;
+ }
+ .recipename{
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+ }
+ .ingredients{
+    margin-bottom: 10px;
+    margin-left: 20px;
+ }
+ .recipeInstructions p{
+    line-height: 30px;
+    white-space: pre-line;
+ }
+  .recipename,.ingredients,.recipeInstructions{
+    margin-bottom: 20px;
+  }
+ .recipe-close-Btn{
+        border: none;
+            font-size: 18px;
+            padding: 8px;
+            border-radius: 4px;
+            background-color: #f44336;
+            color: aliceblue;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+ }
+  body::-webkit-scrollbar {
+     width: 16px;
+  }
+
+  body::-webkit-scrollbar-thumb {
+     background: #a1a1a1;
+  }
+  body::-webkit-scrollbar-track{
+   background-color: #ebebeb;
+  }
+
+@media screen and (max-width:600px){
+    header nav{
+        flex-direction: column;
+
+    }
+
+    header nav form{
+        width: 80%;
+        margin-top: 20px;
+    }
+}
